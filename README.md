@@ -1,4 +1,3 @@
-![Screenshot](https://github.com/furkanotuk/customroutes/blob/main/example.png)
 
 # CustomRoutes Class
 
