@@ -16,6 +16,10 @@ To use the CustomRoutes class in your project, follow these steps:
 
 4. Use the CustomRoutes class to define your page routes in your project.
 
+**Warning: This class operates based on the 'page' GET variable!**
+
+Please make sure to handle the 'page' variable securely to prevent potential security issues.
+
 ```php
 <?php
 
