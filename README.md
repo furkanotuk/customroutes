@@ -10,9 +10,11 @@ To use the CustomRoutes class in your project, follow these steps:
 
 1. Add the `CustomRoutes.php` file to your project.
 
-2. Don't forget to start the session in your project using the `session_start()` function.
+2. Customize the paths in `CustomRoutes.php` according to your own preferences.
 
-3. Use the CustomRoutes class to define your page routes in your project.
+3. Don't forget to start the session in your project using the `session_start()` function.
+
+4. Use the CustomRoutes class to define your page routes in your project.
 
 ```php
 <?php
@@ -27,7 +29,16 @@ $customRoutes = new CustomRoutes();
 $customRoutes->setDefault('homepage');
 
 // Define an example route
+
+$customRoutes->route('homepage', 'index'); // No func, no session check
+
 $customRoutes->route('dashboard', 'dashboard_view', 'dashboard_function', true);
+
+// Define an example route group
+$customRoutes->routeGroup('user_session', [
+    ['page' => 'account', 'view' => 'account_view', 'function' => 'account_function'],
+    ['page' => 'settings', 'view' => 'settings_view', 'function' => 'settings_function'],
+]);
 
 // Call the navigate function
 $customRoutes->navigate();
