@@ -1,3 +1,5 @@
+![Screenshot](https://github.com/furkanotuk/customroutes/blob/main/example.png)
+
 # CustomRoutes Class
 
 CustomRoutes is a simple PHP class that provides page routing and session control in a PHP-based web application.
